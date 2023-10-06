@@ -1,0 +1,7 @@
+@import "./colors";
+
+@mixin border($sides: all, $width: 1px, $style: solid, $color: $clay) {
+  @each $side in $sides {
+    border-#{$side}: $width $style $color;
+  }
+}

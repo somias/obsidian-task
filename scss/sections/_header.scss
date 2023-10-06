@@ -1,0 +1,81 @@
+@import "../colors";
+
+/* Common styles for both headers */
+header {
+  height: 66px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  font-family: "Poppins-Regular";
+
+  img {
+    width: 62px;
+    height: 49px;
+    cursor: pointer;
+  }
+
+  nav ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      padding: 0 20px;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .navbar-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-icons img {
+    width: 24px;
+    height: 24px;
+    margin: 0 9px;
+    cursor: pointer;
+  }
+}
+
+.responsive-full {
+  @media only screen and (max-width: 840px) {
+    display: none; /* Hide the full-width header on smaller screens */
+  }
+}
+
+.responsive-mobile {
+  display: none; /* Hide the mobile header by default */
+
+  @media only screen and (max-width: 840px) {
+    display: flex; /* Display the mobile header on smaller screens */
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: $white;
+
+    .hamburger-menu {
+      margin-right: 21px;
+    }
+
+    img {
+      width: 28px;
+      height: 28px;
+      cursor: pointer;
+    }
+
+    .mobile-responsive-logo {
+      width: 62px;
+      height: 49px;
+    }
+
+    .navbar-icons img {
+      width: 28px;
+      height: 28px;
+    }
+  }
+}

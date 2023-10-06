@@ -1,0 +1,255 @@
+@import "../colors";
+@import "../common";
+
+/* Modify radio button by design */
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label:before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 1px solid $clay;
+  box-shadow: inset 0 0 0 2px $white;
+  vertical-align: middle;
+}
+
+input[type="radio"]:checked + label:before {
+  background-color: $clay;
+}
+
+.product-section {
+  display: flex;
+
+  @media only screen and (max-width: 840px) {
+    margin-top: 66px;
+  }
+
+  .product-image {
+    width: 60%;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .product-information {
+    min-height: 100vh;
+    width: 40%;
+    background-color: $silver;
+    display: flex;
+    flex-direction: column;
+    padding-top: 22px;
+    font-family: "Poppins-Light";
+
+    .title {
+      font-family: "Poppins-Regular";
+    }
+
+    .subtitle {
+      text-transform: uppercase;
+      line-height: 160%;
+    }
+
+    .breadcrumbs {
+      margin-left: 38px;
+      cursor: pointer;
+
+      img {
+        width: 14px;
+        height: 10px;
+        align-self: flex-end; // Arrow is not centered by design
+        margin-right: 11px;
+      }
+
+      // Previous link pages
+      span {
+        font-family: "Poppins-Light";
+        font-size: 11px;
+        text-transform: uppercase;
+        cursor: pointer;
+        margin-right: 2px;
+        color: $light-gray;
+      }
+      // Last link page
+      > *:last-child {
+        color: $primary;
+      }
+    }
+
+    .product-details {
+      margin: 58px 70px 49px;
+
+      .product-description {
+        margin-bottom: 27px;
+        color: $primary;
+        @include border(top);
+        margin-top: 20px;
+        padding-top: 20px;
+      }
+
+      .product-features {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-family: "Poppins-Medium";
+        @include border(bottom);
+        margin-bottom: 35px;
+        padding-bottom: 30px;
+
+        .feature {
+          display: flex;
+          width: 50%;
+          align-items: center;
+          margin-bottom: 30px;
+
+          img {
+            width: 52px;
+            height: 52px;
+            margin-right: 10px;
+          }
+
+          span {
+            color: $ash;
+          }
+        }
+      }
+
+      .product-price-wrapper {
+        :has(input:checked) {
+          opacity: 1;
+        }
+
+        .product-price {
+          display: flex;
+          align-items: center;
+          margin-bottom: 22px;
+          opacity: 0.5;
+
+          input {
+            margin-right: 18px;
+          }
+
+          span {
+            margin-right: 6px;
+          }
+        }
+      }
+
+      .product-counter-wrapper {
+        display: flex;
+        align-items: center;
+        margin-top: 52px;
+
+        .product-counter {
+          width: 111px;
+          height: 47px;
+          border: 1px solid $black;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          margin-right: 16px;
+          font-family: "Lato-Regular";
+
+          span {
+            font-size: 16px;
+            padding: 8px;
+            cursor: pointer;
+            user-select: none;
+          }
+
+          span .min,
+          .plus {
+            font-size: 20px;
+          }
+        }
+
+        .product-add-to-cart {
+          flex: 1;
+
+          button {
+            width: 100%;
+            font-family: "Lato-Regular";
+            max-width: 271px;
+            text-align: center;
+            height: 47px;
+            background-color: $sand;
+            border: none;
+            color: $primary;
+            font-size: 16px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            transition: all 0.2s ease;
+
+            &:active {
+              transform: scale(0.96);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    flex-direction: column;
+
+    .product-image {
+      width: 100%;
+    }
+
+    .product-information {
+      width: 100%;
+    }
+
+    .breadcrumbs-full-responsive {
+      display: none;
+    }
+
+    .breadcrumbs-mobile-responsive {
+      display: flex;
+      padding: 10px 0px;
+      justify-content: center;
+      font-family: "Poppins-Light";
+      font-size: 10px;
+      letter-spacing: 0.5px;
+
+      span {
+        color: $light-gray;
+      }
+
+      > *:last-child {
+        color: $primary;
+      }
+
+      img {
+        align-self: flex-end;
+        margin-right: 11px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1025px) {
+    .breadcrumbs-full-responsive {
+      display: flex;
+
+      img {
+        align-self: flex-end;
+      }
+    }
+
+    .breadcrumbs-mobile-responsive {
+      display: none;
+    }
+  }
+}

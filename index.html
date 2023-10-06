@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scss/index.scss" />
+    <link rel="stylesheet" href="./scss/sections/_header.scss" />
+    <link rel="stylesheet" href="./scss/sections/_product.scss" />
+    <link rel="stylesheet" href="./scss/sections/_ingredients.scss" />
+    <link
+      rel="stylesheet"
+      href="./scss/sections/_product-recommendation.scss"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <title>Act+Acre</title>
+  </head>
+  <body>
+    <header class="responsive-full">
+      <img src="./assets/img/logo.svg" alt="Act+Acre Logo" />
+      <nav>
+        <ul>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Science</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Tutorial</a></li>
+        </ul>
+      </nav>
+      <div class="navbar-icons">
+        <img src="./assets/img/search.svg" alt="Search" />
+        <img src="./assets/img/person.svg" alt="Account" />
+        <img src="./assets/img/cart.svg" alt="Shopping Cart" />
+      </div>
+    </header>
+
+    <header class="responsive-mobile">
+      <div>
+        <img
+          class="hamburger-menu"
+          src="./assets/img/hamburger-menu.svg"
+          alt="Hamburger menu"
+        />
+        <img src="./assets/img/search.svg" alt="Search" />
+      </div>
+      <img
+        class="mobile-responsive-logo"
+        src="./assets/img/logo.svg"
+        alt="Act+Acre Logo"
+      />
+      <div class="navbar-icons">
+        <img src="./assets/img/person.svg" alt="Account" />
+        <img src="./assets/img/cart.svg" alt="Shopping Cart" />
+      </div>
+    </header>
+
+    <section class="product-section">
+      <div class="breadcrumbs breadcrumbs-mobile-responsive">
+        <img src="./assets/img/breadcrumb.svg" alt="Navigation path" />
+
+        <span>ALL PRODUCTS / </span>
+        <span> HAIRCARE / </span>
+        <span> RESTORATIVE HAIR MASK</span>
+      </div>
+
+      <div class="product-image">
+        <img src="./assets/img/product-image.jpg" alt="Product Image" />
+      </div>
+
+      <div class="product-information">
+        <div class="breadcrumbs breadcrumbs-full-responsive">
+          <img src="./assets/img/breadcrumb.svg" alt="Navigation path" />
+
+          <span>ALL PRODUCTS /</span>
+          <span> HAIRCARE / </span>
+          <span> RESTORATIVE HAIR MASK</span>
+        </div>
+
+        <div class="product-details">
+          <h2 class="title">RESTORATIVE HAIR MASK</h2>
+
+          <h4 class="subtitle">nuturishment in a bottle</h4>
+
+          <p class="product-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor
+            commodo ullamcorper a lacus vestibulum. Luctus accumsan tortor
+            posuere ac ut.
+          </p>
+
+          <div class="product-features">
+            <div class="feature">
+              <img
+                src="./assets/img/product-feature.svg"
+                alt="Product feature"
+              />
+              <span>100% ORGANIC</span>
+            </div>
+            <div class="feature">
+              <img
+                src="./assets/img/product-feature.svg"
+                alt="Product feature"
+              />
+              <span>100% ORGANIC</span>
+            </div>
+            <div class="feature">
+              <img
+                src="./assets/img/product-feature.svg"
+                alt="Product feature"
+              />
+              <span>100% ORGANIC</span>
+            </div>
+            <div class="feature">
+              <img
+                src="./assets/img/product-feature.svg"
+                alt="Product feature"
+              />
+              <span>100% ORGANIC</span>
+            </div>
+          </div>
+
+          <div class="product-price-wrapper">
+            <div class="product-price">
+              <input
+                type="radio"
+                id="normal-price"
+                name="price"
+                value="38"
+                checked
+              />
+              <label for="normal-price">Buy Once | <span>$38</span></label>
+            </div>
+
+            <div class="product-price">
+              <input type="radio" id="sales-price" name="price" value="30" />
+              <label for="sales-price"
+                >Subscribe (SAVE 20%) | <span>$30</span></label
+              >
+            </div>
+          </div>
+
+          <div class="product-counter-wrapper">
+            <div class="product-counter">
+              <span class="min">-</span>
+              <span class="num">1</span>
+              <span class="plus">+</span>
+            </div>
+
+            <div class="product-add-to-cart">
+              <button type="submit">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ingredients-section">
+      <div class="ingredients-section-item">
+        <button class="ingredients-section-item-header">
+          <h4 class="title">Ingredients</h4>
+          <span>+</span>
+        </button>
+
+        <div class="ingredients-section-item-content">
+          <p class="ingredients-section-item-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor
+            commodo ullamcorper a lacus vestibulum. Luctus accumsan tortor
+            posuere ac ut.
+          </p>
+        </div>
+      </div>
+      <div class="ingredients-section-item">
+        <button class="ingredients-section-item-header">
+          <h4 class="title">Ingredients</h4>
+          <span>+</span>
+        </button>
+
+        <div class="ingredients-section-item-content">
+          <p class="ingredients-section-item-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor
+            commodo ullamcorper a lacus vestibulum. Luctus accumsan tortor
+            posuere ac ut.
+          </p>
+        </div>
+      </div>
+      <div class="ingredients-section-item">
+        <button class="ingredients-section-item-header">
+          <h4 class="title">Ingredients</h4>
+          <span>+</span>
+        </button>
+
+        <div class="ingredients-section-item-content">
+          <p class="ingredients-section-item-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor
+            commodo ullamcorper a lacus vestibulum. Luctus accumsan tortor
+            posuere ac ut.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-recommendation-section">
+      <h2 class="product-recommendation-section-title">YOU MAY ALSO LIKE</h2>
+
+      <div class="product-recommendation-content">
+        <div id="product-list">
+          <div class="product">
+            <img
+              class="product-recommendation"
+              src="./assets/img/product-recommendation.jpg"
+              alt="Product Recommendation"
+            />
+
+            <h4 class="product-recommendation-title">
+              HAND POMADE / POMMADE MAINS
+            </h4>
+            <h6 class="product-recommendation-subtitle">
+              NOURISHMENT FOR YOUR HANDS
+            </h6>
+
+            <span class="product-recommendation-price">159,00 KR</span>
+          </div>
+
+          <div class="product">
+            <img
+              class="product-recommendation"
+              src="./assets/img/product-recommendation.jpg"
+              alt="Product Recommendation"
+            />
+
+            <h4 class="product-recommendation-title">
+              HAND POMADE / POMMADE MAINS
+            </h4>
+            <h6 class="product-recommendation-subtitle">
+              NOURISHMENT FOR YOUR HANDS
+            </h6>
+
+            <span class="product-recommendation-price">159,00 KR</span>
+          </div>
+          <div class="product">
+            <img
+              class="product-recommendation"
+              src="./assets/img/product-recommendation.jpg"
+              alt="Product Recommendation"
+            />
+
+            <h4 class="product-recommendation-title">
+              HAND POMADE / POMMADE MAINS
+            </h4>
+            <h6 class="product-recommendation-subtitle">
+              NOURISHMENT FOR YOUR HANDS
+            </h6>
+
+            <span class="product-recommendation-price">159,00 KR</span>
+          </div>
+          <div class="product">
+            <img
+              class="product-recommendation"
+              src="./assets/img/product-recommendation.jpg"
+              alt="Product Recommendation"
+            />
+
+            <h4 class="product-recommendation-title">
+              HAND POMADE / POMMADE MAINS
+            </h4>
+            <h6 class="product-recommendation-subtitle">
+              NOURISHMENT FOR YOUR HANDS
+            </h6>
+
+            <span class="product-recommendation-price">159,00 KR</span>
+          </div>
+
+          <div class="product">
+            <img
+              class="product-recommendation"
+              src="./assets/img/product-recommendation.jpg"
+              alt="Product Recommendation"
+            />
+
+            <h4 class="product-recommendation-title">
+              HAND POMADE / POMMADE MAINS
+            </h4>
+            <h6 class="product-recommendation-subtitle">
+              NOURISHMENT FOR YOUR HANDS
+            </h6>
+
+            <span class="product-recommendation-price">159,00 KR</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+.product-recommendation-section {
+  padding: 20px 105px;
+  max-width: 100%;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (max-width: 520px) {
+    padding: 0px 80px;
+  }
+
+  .product-recommendation-section-title {
+    font-family: "Lato-Regular";
+    text-align: center;
+    margin: 24px 0px;
+  }
+
+  .product-recommendation-content {
+    .product {
+      max-width: 365px;
+      display: flex;
+      flex-direction: column;
+      margin: 0px 31px;
+      text-transform: uppercase;
+
+      .product-recommendation-title {
+        font-family: "Lato-Regular";
+        font-size: 16px;
+        margin-top: 16;
+        margin-bottom: 5px;
+      }
+
+      .product-recommendation-subtitle {
+        font-family: "Lato-Light";
+        font-size: 16px;
+        margin-bottom: 31px;
+      }
+
+      .product-recommendation-price {
+        font-family: "Lato-Regular";
+        font-size: 18px;
+      }
+    }
+  }
+}

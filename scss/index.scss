@@ -1,0 +1,10 @@
+@import "./fonts";
+@import "./colors";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+  color: $primary;
+}
