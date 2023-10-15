@@ -26,12 +26,13 @@ input[type="radio"]:checked + label:before {
   display: flex;
 
   @media only screen and (max-width: 840px) {
-    margin-top: 66px;
+    padding-top: 66px;
   }
 
   .product-image {
     width: 60%;
     overflow: hidden;
+    line-height: 0;
 
     img {
       height: 100%;
